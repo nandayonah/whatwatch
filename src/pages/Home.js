@@ -1,5 +1,5 @@
 // import axios from 'axios'
-import { useEffect, useState } from 'react'
+import { useContext, useEffect, useState } from 'react'
 import { Link } from 'react-router-dom'
 import Slider from 'react-slick'
 import 'slick-carousel/slick/slick.css'
@@ -10,8 +10,11 @@ import MovieCard from '../components/MovieCard'
 import MoviePoster from '../components/MoviePoster'
 import LoadingHome from '../components/LoadingHome'
 import { getMovies } from '../mocks/apiMock'
+import { themeContext } from '../contexts/ThemeContextProvider'
 
 export default function Home() {
+  const { theme } = useContext(themeContext)
+
   const [movies, setMovies] = useState([])
 
   const [isLoading, setIsLoading] = useState(true)
@@ -49,7 +52,10 @@ export default function Home() {
     <Layout>
       <section className="mb-8">
         <h2 className="text-3xl font-semibold mb-3 text-white">
-          <span className="font-bold text-red-700">Popular</span> Movies
+          <span className="font-bold text-red-700">Popular</span>{' '}
+          <span className={theme === 'dark' ? 'text-white' : 'text-gray-800'}>
+            Movies
+          </span>
         </h2>
         <Slider
           className="relative"
@@ -76,7 +82,10 @@ export default function Home() {
 
       <section>
         <h2 className="text-3xl font-semibold mb-3 text-white">
-          <span className="font-bold text-red-700">Upcoming</span> Movies
+          <span className="font-bold text-red-700">Upcoming</span>{' '}
+          <span className={theme === 'dark' ? 'text-white' : 'text-gray-800'}>
+            Movies
+          </span>
         </h2>
 
         <div className="flex flex-wrap justify-around">
