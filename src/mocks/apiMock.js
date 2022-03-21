@@ -1,11 +1,6 @@
 import moviesJSON from './movies.data.json'
 
 export const getMovies = async () => {
-  console.log(
-    '%c 🚀 moviesJSON',
-    'color: green; font-weight: bold;',
-    moviesJSON,
-  )
   return new Promise((resolve, reject) => {
     setTimeout(() => {
       resolve(moviesJSON)
@@ -14,9 +9,7 @@ export const getMovies = async () => {
 }
 
 export const getMovieDetail = async (id) => {
-  const found = moviesJSON.results.find((movie) => movie.id == id)
-
-  console.log('%c 🚀 found', 'color: green; font-weight: bold;', found)
+  const found = moviesJSON.results.find((movie) => movie.id === parseInt(id))
 
   return new Promise((resolve, reject) => {
     setTimeout(() => {
