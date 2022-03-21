@@ -12,11 +12,17 @@ export default function MovieDetail() {
   const [isLoading, setIsLoading] = useState(true)
   const [error, setError] = useState('')
 
-  useEffect(() => {
-    handleFetchMovieDetail()
-  }, [])
+  useEffect(
+    () => {
+      handleFetchMovieDetail()
+    },
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+    [id],
+  )
 
   const handleFetchMovieDetail = async () => {
+    if (!id) return
+
     try {
       setIsLoading(true)
 
