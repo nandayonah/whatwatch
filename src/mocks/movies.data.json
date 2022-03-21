@@ -15,7 +15,17 @@
       "title": "Turning Red",
       "video": false,
       "vote_average": 7.5,
-      "vote_count": 783
+      "vote_count": 783,
+      "genres": [
+        {
+          "id": 1,
+          "name": "Action"
+        },
+        {
+          "id": 2,
+          "name": "Crime"
+        }
+      ]
     },
     {
       "adult": false,
@@ -31,7 +41,17 @@
       "title": "Spider-Man: No Way Home",
       "video": false,
       "vote_average": 8.2,
-      "vote_count": 10112
+      "vote_count": 10112,
+      "genres": [
+        {
+          "id": 1,
+          "name": "Action"
+        },
+        {
+          "id": 2,
+          "name": "Crime"
+        }
+      ]
     },
     {
       "adult": false,
@@ -47,7 +67,17 @@
       "title": "The Adam Project",
       "video": false,
       "vote_average": 7.1,
-      "vote_count": 947
+      "vote_count": 947,
+      "genres": [
+        {
+          "id": 1,
+          "name": "Action"
+        },
+        {
+          "id": 2,
+          "name": "Crime"
+        }
+      ]
     },
     {
       "adult": false,
@@ -63,7 +93,17 @@
       "title": "Blacklight",
       "video": false,
       "vote_average": 5.7,
-      "vote_count": 170
+      "vote_count": 170,
+      "genres": [
+        {
+          "id": 1,
+          "name": "Action"
+        },
+        {
+          "id": 2,
+          "name": "Crime"
+        }
+      ]
     },
     {
       "adult": false,
@@ -79,7 +119,17 @@
       "title": "The Batman",
       "video": false,
       "vote_average": 7.9,
-      "vote_count": 2155
+      "vote_count": 2155,
+      "genres": [
+        {
+          "id": 1,
+          "name": "Action"
+        },
+        {
+          "id": 2,
+          "name": "Crime"
+        }
+      ]
     },
     {
       "adult": false,
@@ -95,7 +145,17 @@
       "title": "Encanto",
       "video": false,
       "vote_average": 7.7,
-      "vote_count": 5455
+      "vote_count": 5455,
+      "genres": [
+        {
+          "id": 1,
+          "name": "Action"
+        },
+        {
+          "id": 2,
+          "name": "Crime"
+        }
+      ]
     },
     {
       "adult": false,
@@ -111,7 +171,17 @@
       "title": "No Exit",
       "video": false,
       "vote_average": 6.5,
-      "vote_count": 248
+      "vote_count": 248,
+      "genres": [
+        {
+          "id": 1,
+          "name": "Action"
+        },
+        {
+          "id": 2,
+          "name": "Crime"
+        }
+      ]
     },
     {
       "adult": false,
@@ -127,7 +197,17 @@
       "title": "Gold",
       "video": false,
       "vote_average": 6.5,
-      "vote_count": 130
+      "vote_count": 130,
+      "genres": [
+        {
+          "id": 1,
+          "name": "Action"
+        },
+        {
+          "id": 2,
+          "name": "Crime"
+        }
+      ]
     },
     {
       "adult": false,
@@ -143,7 +223,17 @@
       "title": "Restless",
       "video": false,
       "vote_average": 5.8,
-      "vote_count": 165
+      "vote_count": 165,
+      "genres": [
+        {
+          "id": 1,
+          "name": "Action"
+        },
+        {
+          "id": 2,
+          "name": "Crime"
+        }
+      ]
     },
     {
       "adult": false,
@@ -159,7 +249,17 @@
       "title": "Red Notice",
       "video": false,
       "vote_average": 6.8,
-      "vote_count": 3278
+      "vote_count": 3278,
+      "genres": [
+        {
+          "id": 1,
+          "name": "Action"
+        },
+        {
+          "id": 2,
+          "name": "Crime"
+        }
+      ]
     },
     {
       "adult": false,
@@ -175,7 +275,17 @@
       "title": "Hotel Transylvania: Transformania",
       "video": false,
       "vote_average": 7,
-      "vote_count": 457
+      "vote_count": 457,
+      "genres": [
+        {
+          "id": 1,
+          "name": "Action"
+        },
+        {
+          "id": 2,
+          "name": "Crime"
+        }
+      ]
     },
     {
       "adult": false,
@@ -191,7 +301,17 @@
       "title": "The Ice Age Adventures of Buck Wild",
       "video": false,
       "vote_average": 7.1,
-      "vote_count": 818
+      "vote_count": 818,
+      "genres": [
+        {
+          "id": 1,
+          "name": "Action"
+        },
+        {
+          "id": 2,
+          "name": "Crime"
+        }
+      ]
     },
     {
       "adult": false,
@@ -207,7 +327,17 @@
       "title": "My Hero Academia: World Heroes' Mission",
       "video": false,
       "vote_average": 7.4,
-      "vote_count": 119
+      "vote_count": 119,
+      "genres": [
+        {
+          "id": 1,
+          "name": "Action"
+        },
+        {
+          "id": 2,
+          "name": "Crime"
+        }
+      ]
     },
     {
       "adult": false,
@@ -223,7 +353,17 @@
       "title": "The King's Man",
       "video": false,
       "vote_average": 7,
-      "vote_count": 2046
+      "vote_count": 2046,
+      "genres": [
+        {
+          "id": 1,
+          "name": "Action"
+        },
+        {
+          "id": 2,
+          "name": "Crime"
+        }
+      ]
     },
     {
       "adult": false,
@@ -239,7 +379,17 @@
       "title": "Desperate Riders",
       "video": false,
       "vote_average": 6.2,
-      "vote_count": 19
+      "vote_count": 19,
+      "genres": [
+        {
+          "id": 1,
+          "name": "Action"
+        },
+        {
+          "id": 2,
+          "name": "Crime"
+        }
+      ]
     },
     {
       "adult": false,
@@ -255,7 +405,17 @@
       "title": "Sing 2",
       "video": false,
       "vote_average": 8.2,
-      "vote_count": 2302
+      "vote_count": 2302,
+      "genres": [
+        {
+          "id": 1,
+          "name": "Action"
+        },
+        {
+          "id": 2,
+          "name": "Crime"
+        }
+      ]
     },
     {
       "adult": false,
@@ -271,7 +431,17 @@
       "title": "Kimi",
       "video": false,
       "vote_average": 6.2,
-      "vote_count": 271
+      "vote_count": 271,
+      "genres": [
+        {
+          "id": 1,
+          "name": "Action"
+        },
+        {
+          "id": 2,
+          "name": "Crime"
+        }
+      ]
     },
     {
       "adult": false,
@@ -287,7 +457,17 @@
       "title": "Scream",
       "video": false,
       "vote_average": 6.8,
-      "vote_count": 977
+      "vote_count": 977,
+      "genres": [
+        {
+          "id": 1,
+          "name": "Action"
+        },
+        {
+          "id": 2,
+          "name": "Crime"
+        }
+      ]
     },
     {
       "adult": false,
@@ -303,7 +483,17 @@
       "title": "The Bad Guys",
       "video": false,
       "vote_average": 8,
-      "vote_count": 9
+      "vote_count": 9,
+      "genres": [
+        {
+          "id": 1,
+          "name": "Action"
+        },
+        {
+          "id": 2,
+          "name": "Crime"
+        }
+      ]
     },
     {
       "adult": false,
@@ -319,7 +509,17 @@
       "title": "Eternals",
       "video": false,
       "vote_average": 7.2,
-      "vote_count": 4908
+      "vote_count": 4908,
+      "genres": [
+        {
+          "id": 1,
+          "name": "Action"
+        },
+        {
+          "id": 2,
+          "name": "Crime"
+        }
+      ]
     }
   ],
   "total_pages": 32795,

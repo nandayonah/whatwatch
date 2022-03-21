@@ -35,6 +35,12 @@ export default function MovieDetail() {
 
       const response = await getMovieDetail(id)
 
+      console.log(
+        '%c 🚀 response',
+        'color: green; font-weight: bold;',
+        response,
+      )
+
       setMovieDetail(response)
     } catch (error) {
       setError('Tidak dapat memuat data film, code: ' + error.message)
@@ -52,7 +58,7 @@ export default function MovieDetail() {
       className="relative h-screen bg-blend-multiply"
       style={{
         background: 'rgba(0, 0, 0, 0.5)',
-        backgroundImage: `url(${movieDetail.backdrop_path})`,
+        backgroundImage: `url(${movieDetail?.backdrop_path})`,
         backgroundSize: 'cover',
         backgroundPosition: 'center',
         backgroundRepeat: 'no-repeat',
@@ -62,33 +68,33 @@ export default function MovieDetail() {
         <div className="flex">
           <img
             className="w-40"
-            src={movieDetail.poster_path}
-            alt={movieDetail.title}
+            src={movieDetail?.poster_path}
+            alt={movieDetail?.title}
           />
 
           <div className="ml-2">
-            <h1 className="text-4xl font-bold mb-3">{movieDetail.title}</h1>
+            <h1 className="text-4xl font-bold mb-3">{movieDetail?.title}</h1>
             <p className="flex items-center mb-4 text-sm text-gray-300">
               <span className="border border-gray-500 p-1 mr-1">
-                Ratings {movieDetail.vote_average}/10
+                Ratings {movieDetail?.vote_average}/10
               </span>
 
               <span className="border border-gray-500 p-1 mr-1">
-                {new Date(movieDetail.release_date).getFullYear()}
+                {new Date(movieDetail?.release_date).getFullYear()}
               </span>
               <span className="border border-gray-500 p-1 mr-2">
-                {movieDetail.runtime} menit
+                150 {movieDetail?.runtime} menit
               </span>
-              {movieDetail.genres.map((genre, idx) => (
+              {movieDetail?.genres?.map((genre, idx) => (
                 <span className="inline-block underline" key={genre.id}>
                   {`${genre.name}${
-                    idx === movieDetail.genres.length - 1 ? '' : ','
+                    idx === movieDetail?.genres.length - 1 ? '' : ','
                   }`}
                 </span>
               ))}
             </p>
 
-            <p className="break-words max-w-lg">{movieDetail.overview}</p>
+            <p className="break-words max-w-lg">{movieDetail?.overview}</p>
           </div>
         </div>
       </div>

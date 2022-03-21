@@ -14,9 +14,13 @@ export const getMovies = async () => {
 }
 
 export const getMovieDetail = async (id) => {
+  const found = moviesJSON.results.find((movie) => movie.id == id)
+
+  console.log('%c 🚀 found', 'color: green; font-weight: bold;', found)
+
   return new Promise((resolve, reject) => {
     setTimeout(() => {
-      resolve(moviesJSON.results.find((movie) => movie.id === id))
+      resolve(found)
     }, 2000)
   })
 }
