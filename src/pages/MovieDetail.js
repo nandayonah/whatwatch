@@ -3,6 +3,7 @@ import { useEffect, useState } from 'react'
 import { useParams } from 'react-router-dom'
 import ErrorAlert from '../components/ErrorAlert'
 import LoadingDetail from '../components/LoadingDetail'
+import { getMovieDetail } from '../mocks/apiMock'
 
 export default function MovieDetail() {
   const { id } = useParams()
@@ -26,13 +27,15 @@ export default function MovieDetail() {
     try {
       setIsLoading(true)
 
-      const response = await axios.get(
-        `http://code.aldipee.com/api/v1/movies/${id}`,
-      )
+      // const response = await axios.get(
+      //   `http://code.aldipee.com/api/v1/movies/${id}`,
+      // )
 
-      if (response.status !== 200) throw Error()
+      // if (response.status !== 200) throw Error()
 
-      setMovieDetail(response.data)
+      const response = await getMovieDetail(id)
+
+      setMovieDetail(response)
     } catch (error) {
       setError('Tidak dapat memuat data film, code: ' + error.message)
     } finally {

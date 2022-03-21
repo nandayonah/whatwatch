@@ -9,6 +9,7 @@ import ErrorAlert from '../components/ErrorAlert'
 import MovieCard from '../components/MovieCard'
 import MoviePoster from '../components/MoviePoster'
 import LoadingHome from '../components/LoadingHome'
+import { getMovies } from '../mocks/apiMock'
 
 export default function Home() {
   const [movies, setMovies] = useState([])
@@ -24,11 +25,13 @@ export default function Home() {
     try {
       setIsLoading(true)
 
-      const response = await axios.get('http://code.aldipee.com/api/v1/movies')
+      // const response = await axios.get('http://code.aldipee.com/api/v1/movies')
 
-      if (response.status !== 200) throw Error()
+      // if (response.status !== 200) throw Error()
 
-      setMovies(response.data.results)
+      const response = await getMovies()
+
+      setMovies(response.results)
     } catch (error) {
       setError('Tidak dapat memuat data film, code: ' + error.message)
     } finally {
